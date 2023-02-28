@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/* @import url('https://coolors.co/0b132b-2b3964-6081a9-5bc0be-d6d6d6'); */
+/* @import url('https://coolors.co/fff185-d6bc42-edbd55-d69142-ff702b'); */
+
+:root {
+    --heading-font: "Oswald";
+    --primary-color: #0b132b;
+    --secondary-color: #ff702b;
+    --accent1-color: #d6d6d6;
+    --accent2-color: #fff185;
+    --accent3-color: #5bc0be;
+}
+body {
+    background: var(--accent1-color);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    font-family:var(--heading-font);
+}
+nav {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header {
+    height: 100px;
+    display: flex;
+    background-color: #3B4367;
+    color: var(--accent2-color);
+}
+h1 {
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+}
+h2 {
+    margin: auto;
+}
+.h_line {
+    border-bottom: 1px solid #7e7261;
+    width: 100%;
+    margin: auto;
+    height: .05px;
+}
+h3 {
+    margin: 0;
+    background: var(--accent3-color);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+footer {
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+}
+/* ---CONTACT FORM --- */
+#form {
+    justify-content: center;
+    display: inline-block;
+    -webkit-text-size-adjust: 100%;
+    border: none;
+    width: 90%;
+    max-width: 20rem;
+    padding: 5px 3%;
+    min-height: 20rem;
+    margin-left: 1%;
+    margin: 0 auto;
+}
+form {
+	grid-gap: 0.35rem;
+	grid-template-columns: 1fr 1fr;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem 2%;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    max-width: 20rem;
+    width: 90%;
+}
+form label.top input:required:valid {
+    border-radius: 10px;
+    border: green solid 4px;
+}
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1.2rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color:#555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+#form h2 {
+	font-size: 1.5rem;
+	text-align: center;
+    border-radius: 20px;
+    color: white;
+    background: var(--accent1-color);
+    width: 90%;
+    padding-left: 0;
+    max-width: 20rem;    
+    margin: 0 0 2rem 2%;
+}
+input,
+button {
+	padding: 0.35rem;
+}
+label {
+    text-align: right;
+    padding-top: 10px;
+}
+input:focus {
+    background-color: #ddd;
+}
