@@ -20,11 +20,27 @@ body {
 nav {
     max-width: 100%;
     display: flex;
+    position: sticky; top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     background-color: var(--secondary-color);
+    z-index: 1;
+    border-bottom: solid var(--primary-color);
+}
+nav a {
+    font-size: 18px;
+    height: 40px;
+    margin-top: 8px;
+    color: white;
+    align-items: center;    
+    padding-left: 20px;
+    padding-right: 10px; 
+}
+#nav-home,
+#nav-quote {
+    margin: 8px;
+    padding-top: 16px;    
 }
 main {
     max-width: 1600px;
@@ -34,6 +50,34 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#hero-img {
+    position: relative;
+    width: 100%; height: auto;
+    margin: 0 auto;
+}
+#home-title{
+    position: absolute; top: 3%; left: 35%;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--heading-font);
+    text-align: center;
+	padding: .5rem;
+	opacity: 0.65;
+    padding: 5px;
+}
+#home-title h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+#quote {
+    padding: 5px;
+    position: absolute; left: 25%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3.5vw;
 }
 #grid {
     max-width: 100%;
