@@ -7,6 +7,25 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    h1 {
+        font-size: 2vw;
+    }
+    .card {
+        padding: 0;
+        margin: 1rem;
+    }
+    #services,
+    #customers,
+    #purpose,
+    #approach {
+        font-size: 3vw;
+    }
+    #services p,
+    #customers p,
+    #purpose p,
+    #approach p{
+        font-size: 2vw;
+    }
     footer {        
         display: flex;
         flex-direction: row;
@@ -20,5 +39,26 @@
     }
     #social img {
         border-radius: 10px;
+    }
+    /* ---CONTACT FORM -- */
+    form legend {
+        font-size: 1.5vw;
+    }
+    form label.top {
+        font-size: 1.5vw;
+    }
+    form label.top input {
+        font-size: 1.2vw;
+    }
+    button,
+    input {
+        font-size: 2vw;
+    }
+    #business {
+        font-size: 1.2vw;
+    }
+    .description,
+    .needs {
+        font-size: 1.5vw;
     }
 }
