@@ -1,4 +1,24 @@
-nav {
-    flex-direction: row-reverse;
-    text-align: right;
+@media only screen and (min-width: 600px){
+    nav {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p {
+        font-size:1.5rem;
+        padding-right: 70px;
+        margin: 0;
+    }
+    #social img {
+        border-radius: 10px;
+    }
 }
